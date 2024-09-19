@@ -1,0 +1,8 @@
+<div class="result-container">
+  <span>Result: {{currentEquation}}</span>
+</div>
+<div class="button-container">
+@for (button of listOfButtons; track $index) {
+  <app-function-button buttonValue={{button}} (buttonEmit)="receivedEmit($event)"></app-function-button>
+}
+</div>
